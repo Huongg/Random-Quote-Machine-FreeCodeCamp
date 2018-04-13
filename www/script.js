@@ -39,20 +39,26 @@ let QUOTESJSON = [
     
 ]
 
-let COLOUR = {
-	"darkGolden": "#B8860B",
-	"red": "#B22222",
-	"purple": "#4B0082"
+let COLOUR = [
+	"#B8860B", //darkGolden
+	"#B22222", //red
+	"#4B0082" //purple 
 
+]
+
+function getRandomQuote (){
+	var valOfQuote = Math.floor(Math.random() * QUOTESJSON.length);
+	return QUOTESJSON[valOfQuote];
 }
 
-function getRandomQuote (quote){
-	console.log(Math.floor(Math.random() * QUOTESJSON.length));
+
+
+console.log(getRandomQuote());
+
+function getRandomColour () {
+	var randomColour = Math.floor(Math.random() * COLOUR.length);
+	return COLOUR[randomColour];
 }
 
-
-
-getRandomQuote();
-
-
+console.log(getRandomColour());
 
