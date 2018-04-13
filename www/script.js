@@ -1,3 +1,4 @@
+
 let QUOTESJSON = [
     {
       "quote": "Without Sunday, I wouldn't know when to put on the brakes of a hurtling life.",
@@ -37,3 +38,21 @@ let QUOTESJSON = [
     }
     
 ]
+
+let COLOUR = {
+	"darkGolden": "#B8860B",
+	"red": "#B22222",
+	"purple": "#4B0082"
+
+}
+
+function getRandomQuote (quote){
+	console.log(Math.floor(Math.random() * QUOTESJSON.length));
+}
+
+
+
+getRandomQuote();
+
+
+
