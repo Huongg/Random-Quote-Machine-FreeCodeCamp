@@ -46,6 +46,8 @@ let COLOUR = [
 
 ]
 
+
+
 function getRandomQuote (){
 	var valOfQuote = Math.floor(Math.random() * QUOTESJSON.length);
 	return QUOTESJSON[valOfQuote];
@@ -53,12 +55,54 @@ function getRandomQuote (){
 
 
 
-console.log(getRandomQuote());
+//console.log(getRandomQuote());
 
 function getRandomColour () {
 	var randomColour = Math.floor(Math.random() * COLOUR.length);
 	return COLOUR[randomColour];
-}
+};
 
-console.log(getRandomColour());
+//console.log(getRandomColour());
+
+
+
+$(document).ready(function(){
+	$('#new-quote').click(function(){
+		//buton is clicked -> get ranDomeQuote
+		var randomQuote = getRandomQuote();
+		$("#text").text(randomQuote["quote"]);
+		$("#author").text(randomQuote["author"]);
+		//var randomColor = getRandomColour();
+		$('#quote-box').animate({
+	        border: getRandomColour()
+	    }, 1000);
+	    $('.button').animate({
+	        backgroundColor: getRandomColour()
+	    }, 1000);
+		
+
+
+
+
+	})
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

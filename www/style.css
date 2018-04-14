@@ -1,7 +1,7 @@
 body{
 	background-color: #FFF8DC;
 }
-.quote-box {
+#quote-box {
 
     border: 30px solid #2F4F4F;
     padding: 100px;
@@ -30,7 +30,7 @@ body{
     border-radius:3px;
     outline:none;
     font-size:0.85em;
-    /*padding: 8px 18px 0px 18px;*/
+    padding: 50px 18px 0px 18px;
     /*padding-top:100px;
     padding-bottom: 0px;*/
     opacity:1;
@@ -41,7 +41,8 @@ body{
 }
 
 #text {
-	margin-bottom: 30px;
+	margin
+	-bottom: 30px;
 }
 #tweet-quote, #facebook-quote	 {
 	float: left;
@@ -55,6 +56,12 @@ body{
 
 }
 
+#author {
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 13px;
+}
 #new-quote{
 	float: right;
 	position: relative;
