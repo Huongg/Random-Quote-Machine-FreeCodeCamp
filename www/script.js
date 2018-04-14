@@ -42,7 +42,21 @@ let QUOTESJSON = [
 let COLOUR = [
 	"#B8860B", //darkGolden
 	"#B22222", //red
-	"#4B0082" //purple 
+	"#4B0082", //purple 
+	"#20B2AA", //LightSeaGreen
+	"#4682B4", //SteelBlue
+	"#2F4F4F",//DarkSlateGray
+	"#FF6347", //tomato
+	"#FF69B4", //hot pink
+	"#556B2F", //dark olive
+	"#87CEEB", //sky blue
+	"#6A5ACD", //slate blue
+	"#F08080", //light coral
+	"#FA8072", //salmon
+	"#00FF00", //lime
+	"#3CB371", //sea green
+	"#A52A2A" //brown
+
 
 ]
 
@@ -72,13 +86,10 @@ $(document).ready(function(){
 		var randomQuote = getRandomQuote();
 		$("#text").text(randomQuote["quote"]);
 		$("#author").text(randomQuote["author"]);
-		//var randomColor = getRandomColour();
-		$('#quote-box').animate({
-	        border: getRandomColour()
-	    }, 1000);
-	    $('.button').animate({
-	        backgroundColor: getRandomColour()
-	    }, 1000);
+		var randomColor = getRandomColour();
+		$("#quote-box").css("borderColor", randomColor);
+		$("#new-quote").css("background-color",randomColor);
+	   
 		
 
 

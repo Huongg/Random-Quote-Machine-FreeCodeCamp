@@ -8,10 +8,9 @@ body{
     margin:8% auto auto auto;
   	width:450px;
     position: absolute;
-    top:50%;
-  	left:35%;
-  	margin-top:-150px;  
-  	margin-left:-100px;
+    top:10%;
+  	left:25%;
+  	
   	border-radius: 20px;
   	text-align: center;
   	height:auto;
