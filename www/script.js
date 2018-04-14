@@ -89,13 +89,16 @@ $(document).ready(function(){
 		var randomColor = getRandomColour();
 		$("#quote-box").css("borderColor", randomColor);
 		$("#new-quote").css("background-color",randomColor);
-	   
-		
+	});
 
-
-
-
+	$('#tweet-quote').click(function () {
+		var textToTweet = $(".text").text();		   
+		var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+		window.open(twtLink,'_blank');
+		   
 	})
+		
+	
 });
 
 
